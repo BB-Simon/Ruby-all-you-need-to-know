@@ -308,3 +308,25 @@ out_of_guesses = false
 # else 
 #   puts "You Won!"
 # end
+
+# #################################################################
+# ##################### For Loop In Ruby #########
+# #################################################################
+
+family_members = ['Idon Miah', 'Parul Begum', 'Simon', 'Jimon', 'Takmina']
+
+# for m in family_members
+#   puts m
+# end
+
+# family_members.each do |m|
+#   puts m
+# end
+
+# for index in 0..10
+#   puts index
+# end
+
+# 10.times do |i|
+#   puts i
+# end
