@@ -28,13 +28,13 @@
 # ######################## Data Types In Ruby #####################
 # #################################################################
 
-name = 'Simon'
-occupation = 'Programmer'
-age = 30
-gpa = 3.45
-isNotMale = false
-ismaried = true
-flows = nil
+# name = 'Simon'
+# occupation = 'Programmer'
+# age = 30
+# gpa = 3.45
+# isNotMale = false
+# ismaried = true
+# flows = nil
 
 # #################################################################
 # ##################### Working with String In Ruby ###############
@@ -147,3 +147,93 @@ friends = Array['Simon', 'Jimon', 'Takmina', 30, 28, 25, false, true]
 # #################################################################
 # ##################### Hashes In Ruby #############################
 # #################################################################
+
+person = { 
+  1 => 1,
+  'name' => 'John',
+  'age' => 23,
+  'Is Maried' => false,
+}
+
+# puts person['name']
+# puts person['Is Maried']
+# puts person[1]
+
+# #################################################################
+# ##################### Methods In Ruby ###########################
+# #################################################################
+
+def sayHi(name, age = 23)
+  puts ('Hello ' + name + ' and you are ' + age.to_s + ' year old!')
+end
+
+# puts 'Top'
+# sayHi('Simon', 30)
+# puts 'Bottom'
+
+# ##################### Return statment In Ruby ###########################
+
+def cube(num)
+  # return num * num * num, 23
+  return num * num * num
+end
+
+# puts cube(3)
+
+# #################################################################
+# ##################### If Statement In Ruby #######################
+# #################################################################
+
+# ismale = false
+# istall = true
+
+# if ismale and istall
+# if ismale or istall
+# if ismale and istall
+#   puts 'You are a tall man'
+# elsif ismale and !ismale
+#   puts 'You are not a tall man'
+# elsif !ismale and istall
+#   puts 'You are not a man but tall'
+# else
+#   puts 'You are not male not tall'
+# end
+
+# ##################### If Statement (con't) In Ruby ###################
+
+def max(num1, num2, num3)
+  if(num1 >= num2 and num1 >= num3)
+    return num1
+  elsif (num2 >= num1 and num2 >= num3)
+    return num2
+  else
+    num3
+  end
+end
+
+max_num = max(10, 15, 9)
+# puts max_num
+
+# #################################################################
+# ##################### Build a better calculator In Ruby #########
+# #################################################################
+
+# puts 'Enter the first number: '
+# num1 = gets.chomp().to_f
+# puts 'Enter the operator: '
+# op = gets.chomp()
+# puts 'Enter the second number: '
+# num2 = gets.chomp().to_f
+
+# if(op == "+")
+#   puts num1 + num2
+# elsif(op == "-")
+#   puts num1 - num2
+# elsif(op == "*")
+#   puts num1 * num2
+# elsif(op == "/")
+#   puts num1 / num2
+# else
+#   puts 'Invalid operator!'
+# end
+
