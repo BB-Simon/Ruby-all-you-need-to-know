@@ -330,3 +330,17 @@ family_members = ['Idon Miah', 'Parul Begum', 'Simon', 'Jimon', 'Takmina']
 # 10.times do |i|
 #   puts i
 # end
+
+# #################################################################
+# ##################### Exponent Methods In Ruby #########
+# #################################################################
+
+def pow(base_num, pow_num)
+  result = 1
+  pow_num.times do
+    result *= base_num
+  end
+  return result
+end
+
+# puts pow(5, 2)
