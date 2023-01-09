@@ -266,3 +266,45 @@ def get_day_name(day)
 end
 
 # puts get_day_name('fri')
+
+# #################################################################
+# ##################### While Loop In Ruby #########
+# #################################################################
+
+# index = 1
+
+# while index <=10
+#   puts index
+#   index +=1
+# end
+
+# index = 10
+
+# while index >=1
+#   puts index
+#   index -=1
+# end
+
+# ##################### Guessing Game In Ruby #########
+
+secret_word = "Simon"
+guess = ""
+guess_count = 0
+guess_limit = 3
+out_of_guesses = false
+
+# while guess != secret_word and !out_of_guesses
+#   if(guess_count < guess_limit)
+#     puts 'Enter Guess: '
+#     guess = gets.chomp()
+#     guess_count += 1
+#   else 
+#     out_of_guesses = true
+#   end
+# end
+
+# if(out_of_guesses) 
+#   puts 'You finished your all tries'
+# else 
+#   puts "You Won!"
+# end
