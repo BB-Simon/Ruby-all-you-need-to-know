@@ -45,7 +45,7 @@
 # puts "Soft  \"Tech\""
 # puts "Soft  \nTech"
 
-title = "Soft Tech"
+# title = "Soft Tech"
 # title = "          Soft Tech         "
 # puts title.upcase()
 # puts title.downcase()
@@ -87,12 +87,12 @@ title = "Soft Tech"
 # ##################### Getting user input In Ruby ###############
 # #################################################################
 
-# puts "Enter your name: "
+# puts 'Enter your name: '
 # # name = gets
-# name = gets.chomp()
-# puts "Enter your age: "
-# age = gets.chomp()
-# puts ('Hello ' + name + ", You are " + age + " years old")
+# name = gets.chomp
+# puts 'Enter your age: '
+# age = gets.chomp
+# puts('Hello ' + name + ", You are " + age + " years old")
 
 # #################################################################
 # ##################### Building a calculator In Ruby #############
@@ -138,37 +138,44 @@ friends = Array['Simon', 'Jimon', 'Takmina', 30, 28, 25, false, true]
 # people = Array.new
 # people[0] = 'John'
 # puts people[0]
+# puts people
 
-# puts friends.length()
-# puts friends.include? "Jaman"
-# puts friends.reverse()
-# puts friends.sort()
+# puts friends.length
+# puts friends.include? 'Jaman'
+# puts friends.include? 'Salman'
+# puts friends.reverse
+# puts friends.sort
 
 # #################################################################
 # ##################### Hashes In Ruby #############################
 # #################################################################
 
-person = { 
-  1 => 1,
-  'name' => 'John',
-  'age' => 23,
-  'Is Maried' => false,
-}
+# person = { 
+#   1 => 1,
+#   'name' => 'John',
+#   'age' => 23,
+#   'Is Maried' => false
+# }
 
 # puts person['name']
 # puts person['Is Maried']
 # puts person[1]
+# puts person.is_a? Hash
+# person['name'] = 'Simon'
+
+# puts person['name']
+# puts person
 
 # #################################################################
 # ##################### Methods In Ruby ###########################
 # #################################################################
 
-def sayHi(name, age = 23)
-  puts ('Hello ' + name + ' and you are ' + age.to_s + ' year old!')
-end
+# def sayHi(name, age = 23)
+#   puts ('Hello ' + name + ' and you are ' + age.to_s + ' year old!')
+# end
 
 # puts 'Top'
-# sayHi('Simon', 30)
+# sayHi 'Simon', 30
 # puts 'Bottom'
 
 # ##################### Return statment In Ruby ###########################
@@ -199,7 +206,7 @@ end
 #   puts 'You are not male not tall'
 # end
 
-# ##################### If Statement (con't) In Ruby ###################
+# ##################### If Statement (don't) In Ruby ###################
 
 def max(num1, num2, num3)
   if(num1 >= num2 and num1 >= num3)
@@ -262,7 +269,7 @@ def get_day_name(day)
   else
     day_name = "Invalid abbribeation"
   end
-  return day_name
+  day_name
 end
 
 # puts get_day_name('fri')
@@ -344,3 +351,7 @@ def pow(base_num, pow_num)
 end
 
 # puts pow(5, 2)
+
+# #################################################################
+# ##################### Reading Files In Ruby #########
+# #################################################################
