@@ -388,3 +388,25 @@ end
 # Write file
 # file = File.open('index.html', 'w')
 # file.write("<h1>Hello world!</h1>")
+
+# #################################################################
+# ##################### Error handling In Ruby #########
+# #################################################################
+
+# begin
+#   10 / 0
+# rescue
+#   puts "Error:("
+# end
+
+# lucky_nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# begin
+#   lucky_nums["dogs"]
+#   num = 10 / 0
+# rescue ZeroDivisionError
+#   puts 'Cant dived by zero'
+# # rescue TypeError
+# #   puts 'Wrong type'
+# rescue TypeError => e
+#   puts e
+# end
