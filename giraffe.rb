@@ -410,3 +410,9 @@ end
 # rescue TypeError => e
 #   puts e
 # end
+
+require_relative('utils.rb')
+include Utils
+
+Utils.sayHi('Simon')
+Utils.sayBye('Simon')

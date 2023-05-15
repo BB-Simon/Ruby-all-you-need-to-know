@@ -117,7 +117,7 @@ end
 
 chef = Chef.new
 # puts chef.make_chicken
-puts chef.make_special_dish
+# puts chef.make_special_dish
 
 class BangladeshiChef < Chef
   def make_special_dish
@@ -132,5 +132,5 @@ end
 
 bangladeshi_chef = BangladeshiChef.new
 # puts bangladeshi_chef.make_special_dish
-puts bangladeshi_chef.make_special_dish
-puts bangladeshi_chef.make_chicken_kari
+# puts bangladeshi_chef.make_special_dish
+# puts bangladeshi_chef.make_chicken_kari
