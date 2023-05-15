@@ -355,3 +355,36 @@ end
 # #################################################################
 # ##################### Reading Files In Ruby #########
 # #################################################################
+
+# file = File.open('employee.txt', 'r')
+
+# puts file.read
+# puts file.readlines
+# puts file.readline
+# puts file.readchar
+
+# file.each do |line|
+#   puts ("each line have: " + line)
+# end
+
+# file.readlines.each do |line|
+#   puts("each line have: " + line)
+# end
+
+# file.close
+
+# Read json file and parse it into hash
+# require 'json'
+# json = File.open('sample.json', 'r')
+# p = JSON.parse(json.read)
+# puts p['name']
+# puts p['age']
+# json.close
+
+# Append
+# file = File.open('employee.txt', 'a')
+# file.write("\nSimon, Programmer")
+
+# Write file
+# file = File.open('index.html', 'w')
+# file.write("<h1>Hello world!</h1>")
