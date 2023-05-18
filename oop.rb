@@ -130,7 +130,78 @@ class BangladeshiChef < Chef
 
 end
 
-bangladeshi_chef = BangladeshiChef.new
+# bangladeshi_chef = BangladeshiChef.new
 # puts bangladeshi_chef.make_special_dish
 # puts bangladeshi_chef.make_special_dish
 # puts bangladeshi_chef.make_chicken_kari
+
+
+class Person
+  def initialize(name)
+    @name = name
+  end
+
+  def name
+    @name
+  end
+end
+
+# p1 = Person.new('Simon')
+
+# puts p1.name
+
+require "./animal.rb"
+
+# animal_1 = Animal.new("dog", 4, "Rex")
+# puts animal_1.id
+# puts animal_1.type
+# puts animal_1.name
+# puts animal_1.number_of_legs
+# puts animal_1.speak
+
+# animal_2 = Animal.new("spider", 8)
+# puts animal_2.name
+# puts animal_2.name = "Fluffy"
+# puts animal_2.name
+# puts animal_2.speak
+
+class Dog < Animal
+  def initialize(color, name="Unknown")
+    super("dog", 4, name)
+    @color = color
+  end
+
+  def bring_a_stick
+    "Here is your stick.............."
+  end
+
+  def speak
+    "Woof, woof"
+  end
+end
+
+dog = Dog.new('red', 'Jan')
+
+puts dog.bring_a_stick
+puts dog.speak
+
+
+class Spider < Animal
+  def initialize(web_strenth_level, name="Unknown")
+    super('spider', 8, name)
+    @web_strenth_level = web_strenth_level
+  end
+
+  def make_a_web
+    "WWW"
+  end
+
+  def speak
+    "..."
+  end
+end
+
+spider = Spider.new(4, "Spy")
+puts spider.make_a_web
+puts spider.name
+puts spider.speak
