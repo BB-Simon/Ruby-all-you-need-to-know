@@ -44,6 +44,7 @@
 # puts "Soft  'Tech'"
 # puts "Soft  \"Tech\""
 # puts "Soft  \nTech"
+# puts "Soft   \n\n\nTech"
 
 # title = "Soft Tech"
 # title = "          Soft Tech         "
@@ -53,6 +54,7 @@
 # puts title.length()
 # puts title.include? "Soft"
 # puts title.include? "Hello"
+
 
 # Acces to string by index
 # puts title[6]
@@ -94,6 +96,13 @@
 # age = gets.chomp
 # puts('Hello ' + name + ", You are " + age + " years old")
 
+# puts 'Enter your name: '
+# name = gets.chomp
+# puts 'Enter your NID number: '
+# nid_num = gets.chomp
+
+# puts 'Hello ' + name + ";\nwelcome to kids zone, your NID is: \n" + nid_num + "\nand your KIDY is: \n" + nid_num * 3
+
 # #################################################################
 # ##################### Building a calculator In Ruby #############
 # #################################################################
@@ -126,11 +135,12 @@
 # ##################### Array In Ruby #############################
 # #################################################################
 
-friends = Array['Simon', 'Jimon', 'Takmina', 30, 28, 25, false, true]
+# friends = Array['Simon', 'Jimon', 'Takmina', 30, 28, 25, false, true]
+friends = ['Simon', 'Jimon', 'Takmina', 30, 28, 25, false, true]
 # puts friends
 # puts friends[0]
 # puts friends[-1]
-# puts friends[0, 3]
+# puts friends[0, 1]
 
 # friends[0] = 'Arman'
 # puts friends[0]
@@ -145,6 +155,11 @@ friends = Array['Simon', 'Jimon', 'Takmina', 30, 28, 25, false, true]
 # puts friends.include? 'Salman'
 # puts friends.reverse
 # puts friends.sort
+
+# txt = "This is a text";
+# txt.split;
+# puts txt
+# puts txt.split.sort_by { |t| t[0].match?(/[A-Z]/) ? 0 : 1}
 
 # #################################################################
 # ##################### Hashes In Ruby #############################
@@ -166,6 +181,25 @@ friends = Array['Simon', 'Jimon', 'Takmina', 30, 28, 25, false, true]
 # puts person['name']
 # puts person
 
+# user = { 
+#   'name' => 'Simon',
+#   'age' => 23,
+#   'id' => 3,
+#   'grade' => 6,
+#   'subjects' => ['Math', 'Coding', 'Grammer'],
+#   'address' => { 
+#     'city' => 'BB Block4',
+#     'street' => 4,
+#    }
+# }
+
+# puts user['name']
+# user['name'] = 'Asad'
+# puts user['name']
+# puts user['address']['street']
+# puts user
+
+
 # #################################################################
 # ##################### Methods In Ruby ###########################
 # #################################################################
@@ -178,6 +212,12 @@ friends = Array['Simon', 'Jimon', 'Takmina', 30, 28, 25, false, true]
 # sayHi 'Simon', 30
 # puts 'Bottom'
 
+# def greet(name)
+#   puts 'Hey ' + name
+# end
+
+# puts greet 'Simon'
+
 # ##################### Return statment In Ruby ###########################
 
 def cube(num)
@@ -186,6 +226,15 @@ def cube(num)
 end
 
 # puts cube(3)
+
+# def get_user_nid(user)
+#   return user['info']['nid']
+# end
+# user = { 
+#   'info' => { 'nid' => 404 }
+# }
+
+# puts get_user_nid(user)
 
 # #################################################################
 # ##################### If Statement In Ruby #######################

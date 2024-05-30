@@ -15,6 +15,7 @@
 #   attr_accessor :title, :author, :pages
 # end
 
+
 # book1 = Book.new
 # puts book1
 # book1.title = "JS nad Algo"
@@ -182,8 +183,8 @@ end
 
 dog = Dog.new('red', 'Jan')
 
-puts dog.bring_a_stick
-puts dog.speak
+# puts dog.bring_a_stick
+# puts dog.speak
 
 
 class Spider < Animal
@@ -201,7 +202,48 @@ class Spider < Animal
   end
 end
 
-spider = Spider.new(4, "Spy")
-puts spider.make_a_web
-puts spider.name
-puts spider.speak
+# spider = Spider.new(4, "Spy")
+# puts spider.make_a_web
+# puts spider.name
+# puts spider.speak
+
+
+class People
+  def initialize(name, age, eye_color)
+    @name = name
+    @age = age
+    @eye_color = eye_color
+  end
+
+  def get_info
+    return { 
+      'name' => @name,
+      'age' => @age,
+      'eye_color' => @eye_color
+     }
+  end
+end
+
+class Simon < People
+  def initialize(name, age, eye_color, email, address, contact)
+    super(name, age, eye_color)
+      @email = email
+      @address = address
+      @contact = contact
+  end
+
+  def get_details
+    details = { 
+      'name' => @name,
+      'age' => @age,
+      'address' => @address,
+      'email' => @email,
+      'contact' => @contact,
+      'eye_color' => @eye_color
+     }
+    return details
+  end
+end
+
+simon = Simon.new('Simon', 23, 'blue', 'e@tets.com', 'test', 'test');
+puts simon.get_info()['eye_color']
